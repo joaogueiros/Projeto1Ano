@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <script>
+    function voltarParaHome() {
+      window.location.href = "/home/index.html" // Rota relativa para a página inicial
+    }
+  </script>
+
+  <body>
+    <div class="fundocronometro">
+      <div><p class="titulo">Hoje faz oficialmente</p></div>
+
+      <main id="timer-container">
+        <div class="time-block">
+          <div class="numeros"><span class="time-value days">0</span></div>
+          <br />
+          <span class="time-label">Dias</span>
+        </div>
+
+        <div class="time-block">
+          <div class="numeros"><span class="time-value hours">0</span></div>
+          <br />
+          <span class="time-label">Horas</span>
+        </div>
+
+        <div class="time-block">
+          <div class="numeros"><span class="time-value minutes">0</span></div>
+          <br />
+          <span class="time-label">Minutos</span>
+        </div>
+
+        <div class="time-block">
+          <div class="numeros"><span class="time-value seconds">0</span></div>
+          <br />
+          <span class="time-label">Segundos</span>
+        </div>
+      </main>
+
+      <div><p class="titulo_dois">que você mudou a minha vida!</p></div>
+    </div>
+
+    <ul class="botoes">
+      <li>
+        <a href="#">Albúm de fotos 📸</a>
+      </li>
+
+      <li>
+        <a href="#">Nossa playlist 🎧</a>
+      </li>
+
+  
+      <div class="tracado">
+        <p>--------------------------------------------------------------------------------</p>
+      </div>
+
+    
+      <div class="container">
+        <h2>Deixe sua mensagem</h2>
+        <textarea id="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+        <button class="botao" onclick="salvarMensagem()">Salvar</button>
+    </div>
+    
+    <script src="script.js"></script>
+    
+    
+      <button onclick="voltarParaHome()" class="botoes">
+        Voltar para Home
+      </button>
+    </ul>
+
+
+    <script src="script.js"></script>
+  </body>
+
+
+
+
+
+  <footer>
+    <p>Feito com ❤️ pelo amor da sua vida</p>
+  </footer>
+</html>
+

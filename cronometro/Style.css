@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/foto_fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.fundocronometro {
+  background-color: rgba(255, 255, 255, 0.09);
+  max-width: 1200px; /* Limitar a largura do conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  border-radius: 1%;
+}
+
+.titulo,
+.titulo_dois {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 24rem;
+
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titulo_dois {
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 6px;
+
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.time-block {
+  min-width: 150px;
+  margin: 10px;
+}
+
+.time-value {
+  display: flex;
+  font-size: 80px;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.numeros {
+  display: flex;
+  border: 6px black solid;
+  border-radius: 20%;
+  border-style: double;
+  padding: 1rem;
+  min-width: 10rem;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.time-label {
+  font-size: 25px;
+}
+
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  padding: 24px 0;
+}
+
+.botoes {
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+
+  background: rgb(01, 01, 01, 0.03);
+  border: 1px solid black;
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+
+  transition: background 0.2s;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+
+  background: rgb(01, 01, 01, 0.03);
+  border: 1px solid black;
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+
+  transition: background 0.2s;
+
+  width: 100%;
+  max-width: 20px;
+  margin: 0px auto 0px;
+
+  list-style: none;
+
+  flex-direction: column;
+}
+
+ul li a:hover {
+  background: rgb(01, 01, 01, 0.8);
+  border: 1px solid var(--text-color);
+
+  color: white;
+}
+
+button:hover {
+  background: rgb(01, 01, 01, 0.8);
+  border: 1px solid var(--text-color);
+
+  color: white;
+}
+
+
+.container {
+  background: rgb(01, 01, 01, 0.03);
+  border: 1px solid black;
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+}
+
+.container h2 {
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  color:rgba(255, 255, 255, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  color: black; /* Adiciona a cor preta ao texto */
+}
+
+
+.tracado{
+  text-align: center;
+  font-size: 20px;
+}
+
+
+footer {
+  display: block;
+  text-align: center;
+  padding-top: 20rem;
+}
+
+/* Média Queries para Responsividade */
+
+/* Telas pequenas (celulares) */
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url("/foto_fundo_dois.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+
+  .titulo {
+    font-size: 24px;
+    margin-top: 14rem;
+  }
+
+  .titulo_dois {
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    font-size: 18px;
+  }
+
+  .tracado{
+    font-size: 60px;
+  }
+  
+  .time-block {
+    display: inline;
+  }
+
+  .time-value {
+    font-size: 60px;
+  }
+
+  .time-label {
+    font-size: 20px;
+  }
+
+  footer {
+    padding-top: 5rem;
+    font-size: 18px;
+  }
+}
+
+/* Telas médias (tablets) */
+@media only screen and (max-width: 1024px) {
+  body {
+    background-image: url("foto_fundo_dois.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+
+  .titulo {
+    font-size: 28px;
+    margin-top: 18rem;
+  }
+
+  .titulo_dois {
+    font-size: 24px;
+  }
+
+  .time-value {
+    font-size: 70px;
+  }
+}
+
