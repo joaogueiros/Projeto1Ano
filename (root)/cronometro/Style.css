@@ -4,14 +4,16 @@
   box-sizing: border-box;
 }
 
+
 body {
-  background-image: url("/foto_fundo.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
+  background-color: rgba(74, 74, 74, 0.812);
+
 }
+
+.Foto {
+align-items: start;
+max-width: 1380px;
+} 
 
 .fundocronometro {
   background-color: rgba(255, 255, 255, 0.09);
@@ -206,13 +208,14 @@ footer {
 
 /* Telas pequenas (celulares) */
 @media only screen and (max-width: 768px) {
-  body {
+  .Foto {
     background-image: url("/foto_fundo_dois.jpg");
-    background-size: cover;
+    background-size: cover; /* Garante que a imagem cubra toda a tela */
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+    background-attachment: fixed; /* Torna a imagem fixa ao rolar a página */
   }
 
   .titulo {
@@ -233,7 +236,7 @@ footer {
     font-size: 18px;
   }
 
-  .tracado{
+  .tracado {
     font-size: 60px;
   }
   
@@ -254,6 +257,7 @@ footer {
     font-size: 18px;
   }
 }
+
 
 /* Telas médias (tablets) */
 @media only screen and (max-width: 1024px) {
