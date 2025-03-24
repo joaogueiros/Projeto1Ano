@@ -91,6 +91,16 @@ ul {
   padding: 24px 0;
 }
 
+.Para_quando {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 24rem;
+
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .botoes {
   width: 100%;
   max-width: 588px;
