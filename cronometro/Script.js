@@ -33,19 +33,19 @@ setInterval(updateTimer, 1000);
 updateTimer();
 
 
-// Função para salvar a mensagem no localStorage
-function salvarMensagem() {
-  let mensagem = document.getElementById("mensagem").value;
-  localStorage.setItem("mensagemSalva", mensagem);
-}
+// // Função para salvar a mensagem no localStorage
+// function salvarMensagem() {
+//   let mensagem = document.getElementById("mensagem").value;
+//   localStorage.setItem("mensagemSalva", mensagem);
+// }
 
-// Função para carregar a mensagem salva ao abrir o site
-function carregarMensagem() {
-  let mensagemSalva = localStorage.getItem("mensagemSalva");
-  if (mensagemSalva) {
-      document.getElementById("mensagem").value = mensagemSalva;
-  }
-}
+// // Função para carregar a mensagem salva ao abrir o site
+// function carregarMensagem() {
+//   let mensagemSalva = localStorage.getItem("mensagemSalva");
+//   if (mensagemSalva) {
+//       document.getElementById("mensagem").value = mensagemSalva;
+//   }
+// }
 
-// Carregar a mensagem quando a página for carregada
-window.onload = carregarMensagem;
+// // Carregar a mensagem quando a página for carregada
+// window.onload = carregarMensagem;
