@@ -6,8 +6,13 @@
 
 
 body {
-  background-color: rgba(74, 74, 74, 0.812);
-
+  background-color: rgba(74, 74, 74, 0.812); /* Cor de fundo padrão */
+  background-image: url("/foto_fundo.jpg");
+  background-size: cover; /* Garante que a imagem cubra toda a tela */
+  background-position: top center; /* Fixa a imagem no topo */
+  background-repeat: no-repeat; /* Evita repetição */
+  height: 100vh; /* Faz com que a imagem cubra toda a altura da tela */
+  width: 100vw; /* Mantém a largura da imagem */
 }
 
 .Foto {
@@ -210,28 +215,16 @@ footer {
   margin-bottom: 2px;
 }
 
-/* Média Queries para Responsividade */
 
-/* Telas pequenas (celulares) */
 @media only screen and (max-width: 768px) {
-  .Foto {
-    background-image: url("/foto_fundo_dois.jpg");
+  body {
+    background-image: url("/foto_fundo_dois.jpg"); /* Aplica a nova imagem */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* Define a altura como 100% da viewport */
-    width: 100vw; /* Garante que cubra toda a largura */
-    position: fixed; /* Mantém a imagem fixa */
-    top: 0;
-    left: 0;
-    z-index: -1; /* Envia a imagem para trás do conteúdo */
-  }
-
-  body {
-    position: relative;
-    overflow-x: hidden;
   }
 }
+
 
 
 /* Telas médias (tablets) */
