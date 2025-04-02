@@ -17,7 +17,8 @@ body {
 
 .Foto {
 align-items: start;
-max-width: 1380px;
+width: 1px;
+
 } 
 
 .fundocronometro {
@@ -216,15 +217,26 @@ footer {
 }
 
 
+/* Telas pequenas (celulares) */
 @media only screen and (max-width: 768px) {
-  body {
-    background-image: url("/foto_fundo_dois.jpg"); /* Aplica a nova imagem */
+  .Foto {
+    background-image: url("/foto_fundo_dois.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 100vh; /* Define a altura como 100% da viewport */
+    width: 100vw; /* Garante que cubra toda a largura */
+    position: fixed; /* Mantém a imagem fixa */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Envia a imagem para trás do conteúdo */
+  }
+
+  body {
+    position: relative;
+    overflow-x: hidden;
   }
 }
-
 
 
 /* Telas médias (tablets) */
