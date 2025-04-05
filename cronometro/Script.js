@@ -1,5 +1,5 @@
 // Configura a data inicial
-const startDate = new Date(Date.UTC(2024, 3, 5, 23, 0));
+const startDate = new Date(Date.UTC(2024, 3, 5, 19, 0));
 
 // Função para atualizar o cronômetro
 function updateTimer() {
